@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bicicletas Prolimit — Catálogo con stock disponible</title>
+<meta name="description" content="8 modelos Prolimit con stock confirmado: MTB, urbanas e híbridas desde $245.000. Cuadros de aluminio y acero, transmisiones Shimano y Ltwoo. Consultá por WhatsApp.">
+<meta name="robots" content="index, follow">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Bicicletas Prolimit — Catálogo con stock disponible">
+<meta property="og:description" content="8 modelos Prolimit con stock confirmado desde $245.000. MTB, urbanas e híbridas. Consultá por WhatsApp.">
+<meta property="og:image" content="images/PROLSPORT2.jpg">
+<meta property="og:locale" content="es_AR">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Bicicletas Prolimit — Catálogo con stock disponible">
+<meta name="twitter:description" content="8 modelos Prolimit con stock confirmado desde $245.000.">
+<meta name="twitter:image" content="images/PROLSPORT2.jpg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg: #F7F7F6;
+    --surface: #FFFFFF;
+    --ink: #16171B;
+    --graphite: #52555C;
+    --mute: #8A8D93;
+    --line: #DBDCDE;
+    --line-soft: #E9E9EA;
+    --plat-1: #F1F2F3;
+    --plat-2: #D3D5D7;
+    --plat-3: #AEB1B5;
+    --stock: #3C6B4C;
+    --stock-bg: #E7EEE9;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  body{
+    background:var(--bg);
+    color:var(--ink);
+    font-family:'Inter', sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  .eyebrow{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:12px;
+    letter-spacing:0.18em;
+    text-transform:uppercase;
+    color:var(--mute);
+  }
+  h1,h2,.display{
+    font-family:'Oswald', sans-serif;
+    text-transform:uppercase;
+    letter-spacing:0.01em;
+    font-weight:700;
+  }
+
+  /* ---------- HERO ---------- */
+  .hero{
+    position:relative;
+    overflow:hidden;
+    background:
+      linear-gradient(180deg, #FCFCFB 0%, var(--bg) 100%);
+    border-bottom:1px solid var(--line);
+    padding:56px 6vw 64px;
+  }
+  .grid-overlay{
+    position:absolute; inset:0;
+    background-image:
+      linear-gradient(var(--line-soft) 1px, transparent 1px),
+      linear-gradient(90deg, var(--line-soft) 1px, transparent 1px);
+    background-size: 48px 48px;
+    mask-image: radial-gradient(ellipse 90% 80% at 60% 30%, black 30%, transparent 78%);
+    opacity:0.9;
+  }
+  .hero-inner{ position:relative; z-index:2; max-width:1180px; margin:0 auto;}
+  .brand-row{
+    display:flex; justify-content:space-between; align-items:center;
+    margin-bottom:40px;
+  }
+  .brand-mark{
+    font-family:'Oswald', sans-serif;
+    font-weight:700; font-size:20px; letter-spacing:0.12em;
+  }
+  .brand-mark span{ color:var(--mute); font-weight:400; }
+  .badge-live{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:11px; letter-spacing:0.08em;
+    color:var(--stock);
+    background:var(--stock-bg);
+    border:1px solid #cfe0d5;
+    padding:5px 10px;
+    border-radius:2px;
+  }
+  .hero-title{
+    font-size:clamp(40px, 7vw, 92px);
+    line-height:0.94;
+    max-width:780px;
+  }
+  .hero-title .thin{
+    -webkit-text-stroke: 1.4px var(--ink);
+    color:transparent;
+  }
+  .hero-sub{
+    margin-top:22px;
+    max-width:480px;
+    font-size:15.5px;
+    line-height:1.65;
+    color:var(--graphite);
+  }
+  .hero-meta{
+    display:flex; gap:36px; margin-top:44px; flex-wrap:wrap;
+  }
+  .hero-meta div{ font-family:'IBM Plex Mono', monospace; font-size:12px; color:var(--mute); }
+  .hero-meta strong{
+    display:block; font-family:'Oswald', sans-serif; font-size:26px; color:var(--ink);
+    font-weight:600; letter-spacing:0;
+  }
+  .blueprint-bike{
+    position:absolute;
+    right:-4%; top:8%;
+    width:52%; min-width:460px;
+    opacity:0.9;
+    z-index:1;
+  }
+  @media (max-width: 880px){
+    .blueprint-bike{ display:none; }
+  }
+
+  /* ---------- SECTION HEADER ---------- */
+  .section{ max-width:1180px; margin:0 auto; padding:64px 6vw 0; }
+  .section-head{
+    display:flex; justify-content:space-between; align-items:flex-end;
+    border-bottom:1px solid var(--line);
+    padding-bottom:18px; margin-bottom:36px;
+    flex-wrap:wrap; gap:12px;
+  }
+  .section-head h2{ font-size:28px; }
+  .section-head p{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:12px; color:var(--mute); letter-spacing:0.04em;
+  }
+
+  /* ---------- GRID ---------- */
+  .grid{
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);
+    gap:1px;
+    background:var(--line);
+    border:1px solid var(--line);
+  }
+  @media (max-width: 980px){ .grid{ grid-template-columns:repeat(2,1fr); } }
+  @media (max-width: 560px){ .grid{ grid-template-columns:1fr; } }
+
+  .card{
+    background:var(--surface);
+    padding:26px 24px 22px;
+    display:flex; flex-direction:column;
+    position:relative;
+    transition:background 0.25s ease;
+  }
+  .card:hover{ background:#FCFCFB; }
+  .card-index{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:11px; color:var(--mute);
+    letter-spacing:0.06em;
+  }
+  .card-code{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:11px; color:var(--plat-3);
+    letter-spacing:0.04em;
+  }
+  .card-top{
+    display:flex; justify-content:space-between; align-items:flex-start;
+    margin-bottom:6px;
+  }
+  .icon-wrap{
+    height:150px;
+    display:flex; align-items:center; justify-content:center;
+    margin:14px 0 18px;
+    position:relative;
+  }
+  .icon-wrap::before{
+    content:"";
+    position:absolute; inset:0;
+    background-image: linear-gradient(var(--line-soft) 1px, transparent 1px), linear-gradient(90deg, var(--line-soft) 1px, transparent 1px);
+    background-size:14px 14px;
+    opacity:0.5;
+    z-index:0;
+  }
+  .icon-wrap img{
+    position:relative; z-index:1;
+    max-width:100%; max-height:100%;
+    object-fit:contain;
+    transition: transform 0.4s ease;
+    cursor:zoom-in;
+  }
+  .card:hover .icon-wrap img{
+    transform:scale(1.03);
+  }
+  .rodado-tag{
+    position:absolute;
+    left:8px; bottom:8px;
+    z-index:2;
+    font-family:'IBM Plex Mono', monospace;
+    font-size:10px;
+    letter-spacing:0.04em;
+    color:var(--graphite);
+    background:var(--surface);
+    border:1px solid var(--line);
+    padding:3px 8px;
+    border-radius:2px;
+    display:flex; align-items:center; gap:5px;
+  }
+  .rodado-tag::before{
+    content:"⌀";
+    color:var(--plat-3);
+    font-size:11px;
+  }
+
+  /* ---------- LIGHTBOX ---------- */
+  .lightbox{
+    position:fixed; inset:0;
+    background:rgba(20,20,22,0.92);
+    display:flex; align-items:center; justify-content:center;
+    z-index:100;
+    opacity:0; pointer-events:none;
+    transition:opacity 0.3s ease;
+    padding:40px;
+  }
+  .lightbox.open{ opacity:1; pointer-events:auto; }
+  .lightbox-frame{
+    position:relative;
+    max-width:min(880px, 90vw);
+    width:100%;
+    background:var(--surface);
+    border:1px solid var(--plat-2);
+    padding:28px;
+    transform:scale(0.96);
+    transition:transform 0.3s ease;
+  }
+  .lightbox.open .lightbox-frame{ transform:scale(1); }
+  .lightbox-frame::before{
+    content:"";
+    position:absolute; inset:0;
+    background-image: linear-gradient(var(--line-soft) 1px, transparent 1px), linear-gradient(90deg, var(--line-soft) 1px, transparent 1px);
+    background-size:16px 16px;
+    opacity:0.6;
+  }
+  .lightbox-img-wrap{ position:relative; z-index:1; display:flex; justify-content:center; }
+  .lightbox-img-wrap img{
+    max-width:100%;
+    max-height:68vh;
+    object-fit:contain;
+  }
+  .lightbox-info{
+    position:relative; z-index:1;
+    display:flex; justify-content:space-between; align-items:center;
+    margin-top:20px;
+    padding-top:16px;
+    border-top:1px dashed var(--line);
+  }
+  .lightbox-name{
+    font-family:'Oswald', sans-serif; font-weight:600; font-size:18px;
+  }
+  .lightbox-code{
+    font-family:'IBM Plex Mono', monospace; font-size:11px; color:var(--mute);
+    display:block; margin-top:2px;
+  }
+  .lightbox-price{
+    font-family:'IBM Plex Mono', monospace; font-size:18px; font-weight:600;
+  }
+  .lightbox-close{
+    position:absolute; top:-18px; right:-18px;
+    width:38px; height:38px;
+    background:var(--ink);
+    color:#fff;
+    border:none;
+    border-radius:50%;
+    font-family:'IBM Plex Mono', monospace;
+    font-size:16px;
+    cursor:pointer;
+    display:flex; align-items:center; justify-content:center;
+    z-index:2;
+    transition:transform 0.2s ease;
+  }
+  .lightbox-close:hover{ transform:scale(1.1); }
+  @media (max-width:560px){
+    .lightbox{ padding:16px; }
+    .lightbox-frame{ padding:18px; }
+    .lightbox-close{ top:-14px; right:-8px; }
+  }
+
+  /* ---------- WHATSAPP FAB ---------- */
+  .wa-fab{
+    position:fixed;
+    right:24px; bottom:24px;
+    z-index:90;
+    display:flex; align-items:center; gap:10px;
+    background:var(--ink);
+    color:#fff;
+    text-decoration:none;
+    padding:13px 20px 13px 14px;
+    border-radius:999px;
+    border:1px solid #2a2b30;
+    box-shadow:0 8px 24px rgba(20,20,26,0.28);
+    transition:transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  .wa-fab:hover{
+    transform:translateY(-2px);
+    box-shadow:0 12px 30px rgba(20,20,26,0.34);
+  }
+  .wa-fab svg{ width:22px; height:22px; flex-shrink:0; }
+  .wa-fab-text{ display:flex; flex-direction:column; line-height:1.15; }
+  .wa-fab-label{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:9px; letter-spacing:0.08em; color:#9EA1A6;
+    text-transform:uppercase;
+  }
+  .wa-fab-number{
+    font-family:'Oswald', sans-serif;
+    font-size:14px; font-weight:600; letter-spacing:0.02em;
+  }
+  .wa-dot{
+    width:8px; height:8px; border-radius:50%;
+    background:#4FBF6B;
+    display:inline-block;
+    margin-right:5px;
+    box-shadow:0 0 0 3px rgba(79,191,107,0.18);
+  }
+  @media (max-width:560px){
+    .wa-fab{ right:16px; bottom:16px; padding:12px 16px 12px 12px; }
+    .wa-fab-number{ font-size:13px; }
+  }
+
+  .card-name{
+    font-family:'Oswald', sans-serif;
+    font-weight:600;
