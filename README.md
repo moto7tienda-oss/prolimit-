@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bicicletas Prolimit — Catálogo con stock disponible</title>
+<meta name="description" content="8 modelos Prolimit con stock confirmado: MTB, urbanas e híbridas desde $245.000. Cuadros de aluminio y acero, transmisiones Shimano y Ltwoo. Consultá por WhatsApp.">
+<meta name="robots" content="index, follow">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Bicicletas Prolimit — Catálogo con stock disponible">
+<meta property="og:description" content="8 modelos Prolimit con stock confirmado desde $245.000. MTB, urbanas e híbridas. Consultá por WhatsApp.">
+<meta property="og:image" content="images/PROLSPORT2.jpg">
+<meta property="og:locale" content="es_AR">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Bicicletas Prolimit — Catálogo con stock disponible">
+<meta name="twitter:description" content="8 modelos Prolimit con stock confirmado desde $245.000.">
+<meta name="twitter:image" content="images/PROLSPORT2.jpg">
+
+<!--
+  VERSION-CHECK: 20KB-v2-2026-07-13 (si ves esto al abrir el archivo en un editor de texto, es la versión correcta)
+
+  TRACKING DE CAMPAÑAS (ads)
+  Pegá acá tu Google Ads Tag / Meta Pixel antes de publicar la campaña.
+  Ejemplo Google Ads:
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-XXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-XXXXXXXXX');
+  </script>
+
+  Ejemplo Meta Pixel:
+  <script>
+    !function(f,b,e,v,n,t,s){...} // pegar código oficial de Meta Events Manager
+    fbq('init', 'TU_PIXEL_ID');
+    fbq('track', 'PageView');
+  </script>
+-->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg: #F7F7F6;
+    --surface: #FFFFFF;
+    --ink: #16171B;
+    --graphite: #52555C;
+    --mute: #8A8D93;
+    --line: #DBDCDE;
+    --line-soft: #E9E9EA;
+    --plat-1: #F1F2F3;
+    --plat-2: #D3D5D7;
+    --plat-3: #AEB1B5;
+    --stock: #3C6B4C;
+    --stock-bg: #E7EEE9;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  body{
+    background:var(--bg);
+    color:var(--ink);
+    font-family:'Inter', sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  .eyebrow{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:12px;
+    letter-spacing:0.18em;
+    text-transform:uppercase;
+    color:var(--mute);
+  }
+  h1,h2,.display{
+    font-family:'Oswald', sans-serif;
+    text-transform:uppercase;
+    letter-spacing:0.01em;
+    font-weight:700;
+  }
+
+  /* ---------- HERO ---------- */
+  .hero{
+    position:relative;
+    overflow:hidden;
+    background:
+      linear-gradient(180deg, #FCFCFB 0%, var(--bg) 100%);
+    border-bottom:1px solid var(--line);
+    padding:56px 6vw 64px;
+  }
+  .grid-overlay{
+    position:absolute; inset:0;
+    background-image:
+      linear-gradient(var(--line-soft) 1px, transparent 1px),
+      linear-gradient(90deg, var(--line-soft) 1px, transparent 1px);
+    background-size: 48px 48px;
+    mask-image: radial-gradient(ellipse 90% 80% at 60% 30%, black 30%, transparent 78%);
+    opacity:0.9;
+  }
+  .hero-inner{ position:relative; z-index:2; max-width:1180px; margin:0 auto;}
+  .brand-row{
+    display:flex; justify-content:space-between; align-items:center;
+    margin-bottom:40px;
+  }
+  .brand-mark{
+    font-family:'Oswald', sans-serif;
+    font-weight:700; font-size:20px; letter-spacing:0.12em;
+  }
+  .brand-mark span{ color:var(--mute); font-weight:400; }
+  .badge-live{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:11px; letter-spacing:0.08em;
+    color:var(--stock);
+    background:var(--stock-bg);
+    border:1px solid #cfe0d5;
+    padding:5px 10px;
+    border-radius:2px;
+  }
+  .hero-title{
+    font-size:clamp(40px, 7vw, 92px);
+    line-height:0.94;
+    max-width:780px;
+  }
+  .hero-title .thin{
+    -webkit-text-stroke: 1.4px var(--ink);
+    color:transparent;
+  }
+  .hero-sub{
+    margin-top:22px;
+    max-width:480px;
+    font-size:15.5px;
+    line-height:1.65;
+    color:var(--graphite);
+  }
+  .hero-meta{
+    display:flex; gap:36px; margin-top:44px; flex-wrap:wrap;
+  }
+  .hero-meta div{ font-family:'IBM Plex Mono', monospace; font-size:12px; color:var(--mute); }
+  .hero-meta strong{
+    display:block; font-family:'Oswald', sans-serif; font-size:26px; color:var(--ink);
+    font-weight:600; letter-spacing:0;
+  }
+  .blueprint-bike{
+    position:absolute;
+    right:-4%; top:8%;
+    width:52%; min-width:460px;
+    opacity:0.9;
+    z-index:1;
+  }
+  @media (max-width: 880px){
+    .blueprint-bike{ display:none; }
+  }
+
+  /* ---------- SECTION HEADER ---------- */
+  .section{ max-width:1180px; margin:0 auto; padding:64px 6vw 0; }
+  .section-head{
+    display:flex; justify-content:space-between; align-items:flex-end;
+    border-bottom:1px solid var(--line);
+    padding-bottom:18px; margin-bottom:36px;
+    flex-wrap:wrap; gap:12px;
+  }
+  .section-head h2{ font-size:28px; }
+  .section-head p{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:12px; color:var(--mute); letter-spacing:0.04em;
+  }
+
+  /* ---------- GRID ---------- */
+  .grid{
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);
+    gap:1px;
+    background:var(--line);
+    border:1px solid var(--line);
+  }
+  @media (max-width: 980px){ .grid{ grid-template-columns:repeat(2,1fr); } }
+  @media (max-width: 560px){ .grid{ grid-template-columns:1fr; } }
+
+  .card{
+    background:var(--surface);
+    padding:26px 24px 22px;
+    display:flex; flex-direction:column;
+    position:relative;
+    transition:background 0.25s ease;
+  }
+  .card:hover{ background:#FCFCFB; }
+  .card-index{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:11px; color:var(--mute);
+    letter-spacing:0.06em;
+  }
+  .card-code{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:11px; color:var(--plat-3);
+    letter-spacing:0.04em;
+  }
+  .card-top{
+    display:flex; justify-content:space-between; align-items:flex-start;
+    margin-bottom:6px;
+  }
+  .icon-wrap{
+    height:150px;
+    display:flex; align-items:center; justify-content:center;
+    margin:14px 0 18px;
+    position:relative;
+  }
+  .icon-wrap::before{
+    content:"";
+    position:absolute; inset:0;
+    background-image: linear-gradient(var(--line-soft) 1px, transparent 1px), linear-gradient(90deg, var(--line-soft) 1px, transparent 1px);
+    background-size:14px 14px;
+    opacity:0.5;
+    z-index:0;
+  }
+  .icon-wrap img{
+    position:relative; z-index:1;
+    max-width:100%; max-height:100%;
+    object-fit:contain;
+    transition: transform 0.4s ease;
+    cursor:zoom-in;
+  }
+  .card:hover .icon-wrap img{
+    transform:scale(1.03);
+  }
+  .rodado-tag{
+    position:absolute;
+    left:8px; bottom:8px;
+    z-index:2;
+    font-family:'IBM Plex Mono', monospace;
+    font-size:10px;
+    letter-spacing:0.04em;
+    color:var(--graphite);
+    background:var(--surface);
+    border:1px solid var(--line);
+    padding:3px 8px;
+    border-radius:2px;
+    display:flex; align-items:center; gap:5px;
+  }
+  .rodado-tag::before{
+    content:"⌀";
+    color:var(--plat-3);
+    font-size:11px;
+  }
+
+  /* ---------- LIGHTBOX ---------- */
+  .lightbox{
+    position:fixed; inset:0;
+    background:rgba(20,20,22,0.92);
+    display:flex; align-items:center; justify-content:center;
+    z-index:100;
+    opacity:0; pointer-events:none;
+    transition:opacity 0.3s ease;
+    padding:40px;
+  }
+  .lightbox.open{ opacity:1; pointer-events:auto; }
+  .lightbox-frame{
+    position:relative;
+    max-width:min(880px, 90vw);
+    width:100%;
+    background:var(--surface);
+    border:1px solid var(--plat-2);
+    padding:28px;
+    transform:scale(0.96);
+    transition:transform 0.3s ease;
+  }
+  .lightbox.open .lightbox-frame{ transform:scale(1); }
+  .lightbox-frame::before{
+    content:"";
+    position:absolute; inset:0;
+    background-image: linear-gradient(var(--line-soft) 1px, transparent 1px), linear-gradient(90deg, var(--line-soft) 1px, transparent 1px);
+    background-size:16px 16px;
+    opacity:0.6;
+  }
+  .lightbox-img-wrap{ position:relative; z-index:1; display:flex; justify-content:center; }
+  .lightbox-img-wrap img{
+    max-width:100%;
+    max-height:68vh;
+    object-fit:contain;
+  }
+  .lightbox-info{
+    position:relative; z-index:1;
+    display:flex; justify-content:space-between; align-items:center;
+    margin-top:20px;
+    padding-top:16px;
+    border-top:1px dashed var(--line);
+  }
+  .lightbox-name{
+    font-family:'Oswald', sans-serif; font-weight:600; font-size:18px;
+  }
+  .lightbox-code{
+    font-family:'IBM Plex Mono', monospace; font-size:11px; color:var(--mute);
+    display:block; margin-top:2px;
+  }
+  .lightbox-price{
+    font-family:'IBM Plex Mono', monospace; font-size:18px; font-weight:600;
+  }
+  .lightbox-close{
+    position:absolute; top:-18px; right:-18px;
+    width:38px; height:38px;
+    background:var(--ink);
+    color:#fff;
+    border:none;
+    border-radius:50%;
+    font-family:'IBM Plex Mono', monospace;
+    font-size:16px;
+    cursor:pointer;
+    display:flex; align-items:center; justify-content:center;
+    z-index:2;
+    transition:transform 0.2s ease;
+  }
+  .lightbox-close:hover{ transform:scale(1.1); }
+  @media (max-width:560px){
+    .lightbox{ padding:16px; }
+    .lightbox-frame{ padding:18px; }
+    .lightbox-close{ top:-14px; right:-8px; }
+  }
+
+  /* ---------- WHATSAPP FAB ---------- */
+  .wa-fab{
+    position:fixed;
+    right:24px; bottom:24px;
+    z-index:90;
+    display:flex; align-items:center; gap:10px;
+    background:var(--ink);
+    color:#fff;
+    text-decoration:none;
+    padding:13px 20px 13px 14px;
+    border-radius:999px;
+    border:1px solid #2a2b30;
+    box-shadow:0 8px 24px rgba(20,20,26,0.28);
+    transition:transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  .wa-fab:hover{
+    transform:translateY(-2px);
+    box-shadow:0 12px 30px rgba(20,20,26,0.34);
+  }
+  .wa-fab svg{ width:22px; height:22px; flex-shrink:0; }
+  .wa-fab-text{ display:flex; flex-direction:column; line-height:1.15; }
+  .wa-fab-label{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:9px; letter-spacing:0.08em; color:#9EA1A6;
+    text-transform:uppercase;
+  }
+  .wa-fab-number{
+    font-family:'Oswald', sans-serif;
+    font-size:14px; font-weight:600; letter-spacing:0.02em;
+  }
+  .wa-dot{
+    width:8px; height:8px; border-radius:50%;
+    background:#4FBF6B;
+    display:inline-block;
+    margin-right:5px;
+    box-shadow:0 0 0 3px rgba(79,191,107,0.18);
+  }
+  @media (max-width:560px){
+    .wa-fab{ right:16px; bottom:16px; padding:12px 16px 12px 12px; }
+    .wa-fab-number{ font-size:13px; }
+  }
+
+  .card-name{
+    font-family:'Oswald', sans-serif;
+    font-weight:600;
+    font-size:19px;
+    letter-spacing:0.01em;
+    margin-bottom:6px;
+  }
+  .card-desc{
+    font-size:13px;
+    line-height:1.55;
+    color:var(--graphite);
+    flex-grow:1;
+    margin-bottom:18px;
+  }
+  .card-bottom{
+    display:flex; justify-content:space-between; align-items:center;
+    border-top:1px dashed var(--line);
+    padding-top:14px;
+  }
+  .price{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:17px; font-weight:600;
+    color:var(--ink);
+  }
+  .price .cur{ font-size:11px; color:var(--mute); margin-right:2px; }
+  .stock-tag{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:10px; letter-spacing:0.06em;
+    color:var(--stock);
+    background:var(--stock-bg);
+    padding:4px 8px;
+    border-radius:2px;
+    white-space:nowrap;
+  }
+
+  /* ---------- FOOTER STRIP ---------- */
+  .footer{
+    max-width:1180px; margin:64px auto 0; padding:26px 6vw 40px;
+    border-top:1px solid var(--line);
+    display:flex; justify-content:space-between; flex-wrap:wrap; gap:10px;
+  }
+  .footer .eyebrow{ font-size:11px; }
+</style>
+</head>
+<body>
+
+<section class="hero">
+  <div class="grid-overlay"></div>
+
+  <svg class="blueprint-bike" viewBox="0 0 560 320" fill="none">
+    <defs>
+      <linearGradient id="platGrad" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0" stop-color="var(--plat-1)"/>
+        <stop offset="0.5" stop-color="var(--plat-2)"/>
+        <stop offset="1" stop-color="var(--plat-3)"/>
+      </linearGradient>
+    </defs>
+    <circle cx="130" cy="220" r="78" stroke="url(#platGrad)" stroke-width="2.5"/>
+    <circle cx="130" cy="220" r="4" fill="var(--plat-3)"/>
+    <circle cx="420" cy="220" r="78" stroke="url(#platGrad)" stroke-width="2.5"/>
+    <circle cx="420" cy="220" r="4" fill="var(--plat-3)"/>
+    <path d="M130 220 L230 110 L340 110 M230 110 L200 220 M200 220 L130 220 M200 220 L420 220 M340 110 L420 220 M340 110 L360 80 M360 80 L392 80" stroke="url(#platGrad)" stroke-width="2.5" stroke-linejoin="round"/>
+    <path d="M200 220 L165 250 M235 250 L165 250" stroke="var(--plat-3)" stroke-width="2.5"/>
+    <circle cx="200" cy="220" r="18" stroke="var(--plat-3)" stroke-width="1.5" stroke-dasharray="2 3"/>
+    <path d="M230 110 L215 95 L245 95" stroke="var(--plat-3)" stroke-width="2"/>
+    <line x1="30" y1="298" x2="500" y2="298" stroke="var(--plat-3)" stroke-width="1"/>
+    <line x1="130" y1="298" x2="130" y2="304" stroke="var(--plat-3)" stroke-width="1"/>
+    <line x1="420" y1="298" x2="420" y2="304" stroke="var(--plat-3)" stroke-width="1"/>
+    <text x="255" y="316" font-family="IBM Plex Mono, monospace" font-size="10" fill="var(--plat-3)">1050 mm</text>
+  </svg>
+
+  <div class="hero-inner">
+    <div class="brand-row">
+      <div class="brand-mark">PROLIMIT</div>
+      <div class="badge-live">● 8 MODELOS EN STOCK</div>
+    </div>
+
+    <div class="eyebrow">Ficha técnica · Prolimit</div>
+    <h1 class="hero-title">CONSTRUIDAS<br>PARA<span class="thin"> RODAR.</span></h1>
+    <p class="hero-sub">Ocho modelos Prolimit con disponibilidad confirmada: rodados urbanos, MTB y bicicletas de trekking. Cuadros de acero liviano y aluminio, transmisiones Shimano y Ltwoo. Precio de contado.</p>
+
+    <div class="hero-meta">
+      <div><strong>8</strong>MODELOS</div>
+      <div><strong>$245K–500K</strong>RANGO DE PRECIO</div>
+      <div><strong>100%</strong>DISPONIBILIDAD</div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head">
+    <h2>Catálogo Prolimit</h2>
+    <p>ORDENADO POR PRECIO · DE MENOR A MAYOR</p>
+  </div>
+
+  <div class="grid" id="grid"></div>
+</section>
+
+<div class="lightbox" id="lightbox">
+  <div class="lightbox-frame">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Cerrar">✕</button>
+    <div class="lightbox-img-wrap">
+      <img id="lightboxImg" src="" alt="">
+    </div>
+    <div class="lightbox-info">
+      <div>
+        <div class="lightbox-name" id="lightboxName"></div>
+        <span class="lightbox-code" id="lightboxCode"></span>
+        <span class="lightbox-code" id="lightboxRodado"></span>
+      </div>
+      <div class="lightbox-price" id="lightboxPrice"></div>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <div class="eyebrow">Lista de precios · Ciclismo</div>
+  <div class="eyebrow">Precios de contado, sujetos a variación sin previo aviso</div>
+</div>
+
+<script>
+
+const products = [
+  {code:"PROLDIRT", name:"Prolimit Dirt", desc:"Rodado 20 con freno a disco. Ideal para las primeras salidas exigentes, cuadro compacto y resistente.", price:245000, img:"images/PROLDIRT.jpg", rodado:"20''"},
+  {code:"PROLPLEGA", name:"Prolimit FOLD", desc:"Rodado 20 plegable, 7 velocidades. Se guarda en cualquier lado, pensada para moverse por la ciudad.", price:260000, img:"images/PROLPLEGA.jpg", rodado:"20''"},
+  {code:"PROLIRON", name:"Prolimit Iron 1 2025", desc:"Cuadro de acero liviano, 21 velocidades, cableado full interno para una estética limpia.", price:285000, img:"images/PROLIRON.jpg", rodado:"29''"},
+  {code:"FORCE0", name:"Prolimit Force 0 2026", desc:"Cambio trasero, descarrilador y manijas Shimano. Reingreso al catálogo por alta demanda.", price:330000, img:"images/FORCE0.jpg", rodado:"29''"},
+  {code:"PROLSPORT1", name:"Prolimit Sport 1", desc:"Híbrida urbana rodado 700x35. Cuadro de acero liviano, 21 velocidades Sunrun.", price:330000, img:"images/PROLSPORT1.jpg", rodado:"700x35"},
+  {code:"FORCE12026", name:"Prolimit Force 1 2026", desc:"Transmisión 1x9 Ltwoo A5 con frenos a disco mecánico. Simple, directa, confiable.", price:360000, img:"images/FORCE12026.jpg", rodado:"29''"},
+  {code:"FORCE1PRO2026", name:"Prolimit Force 1 Pro 2026", desc:"Transmisión 1x9 Ltwoo A5 con frenos a disco hidráulico para mayor potencia de frenada.", price:440000, img:"images/FORCE1PRO2026.jpg", rodado:"29''"},
+  {code:"PROLSPORT2", name:"Prolimit Sport 2", desc:"Híbrida urbana con cuadro y horquilla de aluminio, 21 vel Ltwoo A3, maza a rulemanes.", price:500000, img:"images/PROLSPORT2.jpg", rodado:"700x35"},
+];
+
+const grid = document.getElementById('grid');
+products.forEach((p, i) => {
+  const card = document.createElement('div');
+  card.className = 'card';
+  card.innerHTML = `
+    <div class="card-top">
+      <span class="card-index">N°${String(i+1).padStart(2,'0')}</span>
+      <span class="card-code">${p.code}</span>
+    </div>
+    <div class="icon-wrap"><img src="${p.img}" alt="${p.name}" loading="lazy" data-index="${i}"><span class="rodado-tag">${p.rodado}</span></div>
+    <div class="card-name">${p.name}</div>
+    <div class="card-desc">${p.desc}</div>
+    <div class="card-bottom">
+      <div class="price"><span class="cur">$</span>${p.price.toLocaleString('es-AR')}</div>
+      <div class="stock-tag">EN STOCK</div>
+    </div>
+  `;
+  grid.appendChild(card);
+});
+
+// ---------- Lightbox ----------
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = document.getElementById('lightboxImg');
+const lightboxName = document.getElementById('lightboxName');
+const lightboxCode = document.getElementById('lightboxCode');
+const lightboxRodado = document.getElementById('lightboxRodado');
+const lightboxPrice = document.getElementById('lightboxPrice');
+const lightboxClose = document.getElementById('lightboxClose');
+
+function openLightbox(index){
+  const p = products[index];
+  lightboxImg.src = p.img;
+  lightboxImg.alt = p.name;
+  lightboxName.textContent = p.name;
+  lightboxCode.textContent = p.code;
+  lightboxRodado.textContent = '· Rodado ' + p.rodado;
+  lightboxPrice.textContent = '$' + p.price.toLocaleString('es-AR');
+  lightbox.classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeLightbox(){
+  lightbox.classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+grid.addEventListener('click', (e) => {
+  const img = e.target.closest('.icon-wrap img');
+  if(img){ openLightbox(Number(img.dataset.index)); }
+});
+
+lightboxClose.addEventListener('click', closeLightbox);
+lightbox.addEventListener('click', (e) => {
+  if(e.target === lightbox){ closeLightbox(); }
+});
+document.addEventListener('keydown', (e) => {
+  if(e.key === 'Escape'){ closeLightbox(); }
+});
+</script>
+
+<a class="wa-fab" href="https://wa.me/5491126625473?text=Hola%2C%20quiero%20consultar%20por%20los%20modelos%20Prolimit" target="_blank" rel="noopener">
+  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M17.6 6.32A8.86 8.86 0 0 0 12.05 4C7.6 4 4 7.6 4 12.05a8.6 8.6 0 0 0 1.24 4.46L4 21l4.6-1.2a8.65 8.65 0 0 0 3.44.71h.01c4.45 0 8.05-3.6 8.05-8.05a8.02 8.02 0 0 0-2.5-6.14Z" stroke="#fff" stroke-width="1.3"/>
+    <path d="M9.4 8.75c.15-.34.31-.35.46-.35.12 0 .26 0 .37.01.12.01.29-.04.45.34.17.4.57 1.4.62 1.5.05.1.08.22.02.35-.06.13-.09.21-.18.32-.09.11-.19.24-.27.32-.09.09-.19.19-.08.38.11.19.5.83 1.08 1.34.74.66 1.37.87 1.56.97.19.1.3.08.41-.05.11-.13.47-.55.6-.74.13-.19.25-.16.42-.1.17.07 1.09.51 1.28.61.19.1.32.14.36.22.05.09.05.51-.12.99-.17.49-.98.93-1.36.98-.35.06-.79.08-1.28-.08-.29-.09-.67-.22-1.15-.43-2.02-.87-3.34-2.9-3.44-3.04-.1-.13-.82-1.1-.82-2.09 0-.99.52-1.48.7-1.68Z" fill="#fff"/>
+  </svg>
+  <span class="wa-fab-text">
+    <span class="wa-fab-label"><span class="wa-dot"></span>Consultar</span>
+    <span class="wa-fab-number">+54 9 11 2662-5473</span>
+  </span>
+</a>
+
+</body>
+</html>

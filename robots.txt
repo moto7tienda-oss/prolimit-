@@ -1,0 +1,83 @@
+# Bicicletas Prolimit — Landing de catálogo
+
+Landing estática (HTML/CSS/JS puro, sin build ni dependencias) lista para publicar en **GitHub Pages**.
+
+## ⚠️ Antes de subir: verificá que los archivos NO estén vacíos
+
+Antes de arrastrarlos a GitHub, revisá en tu computadora:
+- `index.html` debe pesar aproximadamente **20 KB** (no 0 bytes).
+- Cada foto en `images/` debe pesar entre 60-80 KB (no 0 bytes).
+
+Si algún archivo aparece con tamaño 0, volvé a descomprimir el ZIP original — no lo edites ni lo abras y guardes desde un editor de texto antes de subirlo.
+
+## 🚀 Publicar en GitHub Pages (gratis, 5 minutos)
+
+1. Andá a [github.com](https://github.com) → tu repositorio (o creá uno nuevo si no existe: **New repository**, público, sin README).
+2. **Si ya existe un `index.html` en el repo (aunque sea viejo o vacío), eliminalo primero:**
+   - Hacé clic en el archivo → ícono de basura (🗑️) arriba a la derecha → confirmá el commit de borrado.
+3. Hacé clic en **"Add file" → "Upload files"** (nunca "Create new file" para esto).
+4. Abrí la carpeta descomprimida en tu explorador de archivos (Finder / Explorador de Windows) y **arrastrá TODO lo que está adentro** — no la carpeta contenedora en sí — a la ventana de GitHub:
+   - `index.html`
+   - la carpeta `images/` completa (con las 8 fotos adentro)
+   - `README.md`
+   - `robots.txt`
+5. **Antes de confirmar el commit**, GitHub te muestra una vista previa de los archivos a subir con su tamaño. Verificá ahí mismo que `index.html` no diga "0 Bytes".
+6. Confirmá el commit ("Commit changes").
+7. Subí `.nojekyll` aparte, porque es un archivo oculto y tu explorador puede no mostrarlo al arrastrar:
+   - **"Add file" → "Create new file"**
+   - Nombre exacto: `.nojekyll`
+   - Dejalo vacío, sin escribir nada
+   - Commit.
+8. Andá a **Settings → Pages** (menú lateral del repo).
+9. En "Source" elegí la rama `main` y la carpeta `/ (root)`. Guardá.
+10. Esperá 1-2 minutos y abrí:
+    ```
+    https://TU-USUARIO.github.io/NOMBRE-REPO/
+    ```
+
+## 🩺 Si la página sigue en blanco
+
+Verificalo vos mismo antes de volver a subir:
+1. Andá a `https://github.com/TU-USUARIO/TU-REPO/blob/main/index.html`
+2. Si GitHub muestra el archivo vacío o dice "This file is empty", el problema es que `index.html` no se subió bien. Repetí el paso 2-6.
+3. Confirmá que existe la carpeta `images/` con las 8 fotos dentro (andá a `.../TU-REPO/tree/main/images`).
+
+## 🌐 Dominio propio (recomendado para ads)
+
+Los ads convierten mejor con un dominio propio en vez de `github.io`. Si tenés un dominio:
+1. En **Settings → Pages → Custom domain**, escribí tu dominio (ej: `bicicletas.tuempresa.com`).
+2. En tu proveedor de dominio, creá un registro CNAME apuntando a `TU-USUARIO.github.io`.
+3. GitHub genera el certificado HTTPS automáticamente (puede tardar unas horas).
+
+## 📊 Antes de lanzar la campaña de ads
+
+- **Tracking**: abrí `index.html`, buscá el comentario `TRACKING DE CAMPAÑAS` cerca del `<head>` y pegá ahí tu **Google Ads Tag** o **Meta Pixel**.
+- **UTMs**: usá parámetros UTM en el link del anuncio, ej:
+  `https://tudominio.com/?utm_source=meta&utm_medium=cpc&utm_campaign=prolimit_julio`
+- **WhatsApp**: el botón flotante apunta a `+54 9 11 2662-5473`.
+
+## 🛠 Estructura del proyecto
+
+```
+index.html       → la landing completa (~20 KB)
+images/           → 8 fotos de productos (~65-80KB c/u)
+.nojekyll         → evita que GitHub Pages procese el sitio con Jekyll
+robots.txt        → permite indexación por buscadores
+```
+
+## ✏️ Editar contenido
+
+Los productos (nombre, descripción, precio, foto, rodado) están en un array de JavaScript dentro de `index.html`, buscá `const products = [`.
+
+## 📦 Catálogo actual
+
+| Modelo | Rodado | Precio |
+|---|---|---|
+| Prolimit Dirt | 20'' | $245.000 |
+| Prolimit FOLD | 20'' | $260.000 |
+| Prolimit Iron 1 2025 | 29'' | $285.000 |
+| Prolimit Force 0 2026 | 29'' | $330.000 |
+| Prolimit Sport 1 | 700x35 | $330.000 |
+| Prolimit Force 1 2026 | 29'' | $360.000 |
+| Prolimit Force 1 Pro 2026 | 29'' | $440.000 |
+| Prolimit Sport 2 | 700x35 | $500.000 |
